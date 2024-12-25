@@ -1,9 +1,7 @@
 name: Docker Image Sync to Tencent Cloud
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   sync-images:
