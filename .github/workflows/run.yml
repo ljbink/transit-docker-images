@@ -17,7 +17,8 @@ jobs:
     - name: Install yq
       run: |
         sudo apt-get update
-        sudo apt-get install -y yq
+        sudo apt-get install -y snapd
+        sudo snap install yq
 
     - name: Install Python and Pip
       run: |
