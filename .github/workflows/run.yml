@@ -56,8 +56,13 @@ jobs:
         PRIVATE_REGISTRY="${{ secrets.TENCENTCLOUD_REGISTRY }}/ljb-dev"
         for IMAGE in $IMAGES; do
           echo "Processing $IMAGE"
-          docker pull $IMAGE
           REPO_NAME=$(echo $IMAGE | cut -d '/' -f 2)
-          docker tag $IMAGE $PRIVATE_REGISTRY/$REPO_NAME
-          docker push $PRIVATE_REGISTRY/$REPO_NAME
+          TARGET_IMAGE="$PRIVATE_REGISTRY/$REPO_NAME"
+          if docker manifest inspect $TARGET_IMAGE > /dev/null 2>&1; then
+            echo "$TARGET_IMAGE already exists, skipping..."
+          else
+            docker pull $IMAGE
+            docker tag $IMAGE $TARGET_IMAGE
+            docker push $TARGET_IMAGE
+          fi
         done
