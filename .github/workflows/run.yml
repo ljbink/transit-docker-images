@@ -34,6 +34,18 @@ jobs:
         tccli configure set secretKey ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
         tccli configure set region ap-guangzhou
 
+    - name: Create Namespace if not exists
+      run: |
+        tccli tcr CreateNamespace --registry-id ${{ secrets.TENCENTCLOUD_REGISTRY_ID }} --namespace ljb-dev || true
+
+    - name: Create Repository if not exists
+      run: |
+        IMAGES=$(yq e '.images[]' images.yaml)
+        for IMAGE in $IMAGES; do
+          REPO_NAME=$(echo $IMAGE | cut -d '/' -f 2)
+          tccli tcr CreateRepository --registry-id ${{ secrets.TENCENTCLOUD_REGISTRY_ID }} --namespace ljb-dev --repository-name $REPO_NAME || true
+        done
+
     - name: Log in to Tencent Cloud Docker Registry
       run: |
         echo ${{ secrets.TENCENTCLOUD_PASSWORD }} | docker login -u ${{ secrets.TENCENTCLOUD_USERNAME }} --password-stdin ${{ secrets.TENCENTCLOUD_REGISTRY }}
@@ -41,10 +53,11 @@ jobs:
     - name: Read Docker Images from YAML and Sync
       run: |
         IMAGES=$(yq e '.images[]' images.yaml)
-        PRIVATE_REGISTRY="${{ secrets.TENCENTCLOUD_REGISTRY }}"
+        PRIVATE_REGISTRY="${{ secrets.TENCENTCLOUD_REGISTRY }}/ljb-dev"
         for IMAGE in $IMAGES; do
           echo "Processing $IMAGE"
           docker pull $IMAGE
-          docker tag $IMAGE $PRIVATE_REGISTRY/$IMAGE
-          docker push $PRIVATE_REGISTRY/$IMAGE
+          REPO_NAME=$(echo $IMAGE | cut -d '/' -f 2)
+          docker tag $IMAGE $PRIVATE_REGISTRY/$REPO_NAME
+          docker push $PRIVATE_REGISTRY/$REPO_NAME
         done
