@@ -1,2 +1,3 @@
 images:
   - php:8.0-fpm
+  - snowdreamtech/frps:0.57.0
