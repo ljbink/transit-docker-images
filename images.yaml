@@ -15,3 +15,4 @@ images:
   - supabase/postgres:15.8.1.060
   - timberio/vector:0.28.1-alpine
   - supabase/supavisor:2.5.1
+  - renxia/m3u8-dl:1.2.1
