@@ -1,21 +1,21 @@
 images:
-  - php:8.0-fpm
-  - snowdreamtech/frps:0.57.0
-  - cloudreve/cloudreve:4.0.0
-  - supabase/studio:2025.05.19-sha-3487831
-  - kong:2.8.1
-  - supabase/gotrue:v2.172.1
-  - postgrest/postgrest:v12.2.12
-  - supabase/realtime:v2.34.47
-  - supabase/storage-api:v1.22.17
-  - darthsim/imgproxy:v3.8.0
-  - supabase/postgres-meta:v0.89.0
-  - supabase/edge-runtime:v1.67.4
-  - supabase/logflare:1.12.0
-  - supabase/postgres:15.8.1.060
-  - timberio/vector:0.28.1-alpine
-  - supabase/supavisor:2.5.1
-  - renxia/m3u8-dl:1.2.1
-  - iib0011/omni-tools:0.4.0
-  - corentinth/it-tools:2024.10.22-7ca5933
-  - rustdesk/rustdesk-server:1.4.0
+  # - php:8.0-fpm
+  # - snowdreamtech/frps:0.57.0
+  # - cloudreve/cloudreve:4.0.0
+  # - supabase/studio:2025.05.19-sha-3487831
+  # - kong:2.8.1
+  # - supabase/gotrue:v2.172.1
+  # - postgrest/postgrest:v12.2.12
+  # - supabase/realtime:v2.34.47
+  # - supabase/storage-api:v1.22.17
+  # - darthsim/imgproxy:v3.8.0
+  # - supabase/postgres-meta:v0.89.0
+  # - supabase/edge-runtime:v1.67.4
+  # - supabase/logflare:1.12.0
+  # - supabase/postgres:15.8.1.060
+  # - timberio/vector:0.28.1-alpine
+  # - supabase/supavisor:2.5.1
+  # - renxia/m3u8-dl:1.2.1
+  # - iib0011/omni-tools:0.4.0
+  # - corentinth/it-tools:2024.10.22-7ca5933
+  - rustdesk/rustdesk-server:1.1.14
