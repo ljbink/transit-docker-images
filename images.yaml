@@ -1,7 +1,7 @@
 images:
   # - php:8.0-fpm
   # - snowdreamtech/frps:0.57.0
-  - cloudreve/cloudreve:4.1.3
+  # - cloudreve/cloudreve:4.1.3
   # - supabase/studio:2025.05.19-sha-3487831
   # - kong:2.8.1
   # - supabase/gotrue:v2.172.1
@@ -19,3 +19,4 @@ images:
   # - iib0011/omni-tools:0.4.0
   # - corentinth/it-tools:2024.10.22-7ca5933
   # - rustdesk/rustdesk-server:1.1.14
+  - headscale/headscale:sha-474ea236
