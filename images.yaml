@@ -20,5 +20,5 @@ images:
   # - corentinth/it-tools:2024.10.22-7ca5933
   # - rustdesk/rustdesk-server:1.1.14
   # - headscale/headscale:sha-474ea236
-  - vaultwarden/server:sha256-b67e2afbe7f7e7662487acc313eeea8b6d15a132042530284a53a7fe1478e079
+  - vaultwarden/server:latest
   - caddy:2.10.0
