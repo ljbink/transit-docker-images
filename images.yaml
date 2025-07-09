@@ -22,4 +22,5 @@ images:
   # - headscale/headscale:sha-474ea236
   # - vaultwarden/server:latest
   # - caddy:2.10.0
-  - fredliang/derper:v1.84.2
+  # - fredliang/derper:v1.84.2
+  - tailscale/tailscale:v1.84.3
