@@ -20,7 +20,7 @@ images:
   # - corentinth/it-tools:2024.10.22-7ca5933
   # - rustdesk/rustdesk-server:1.1.14
   # - headscale/headscale:sha-474ea236
-  # - vaultwarden/server:latest
+  - vaultwarden/server:sha256-2981e809c332e46d49bd29e6a898ca5ba13fa431befabe52d0ce11ed237cb5ef
   # - caddy:2.10.0
   # - fredliang/derper:v1.84.2
-  - tailscale/tailscale:v1.84.3
+  - tailscale/tailscale:v1.86.0
