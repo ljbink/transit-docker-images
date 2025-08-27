@@ -22,5 +22,5 @@ images:
   # - vaultwarden/server:latest
   # - caddy:2.10.0
   # - fredliang/derper:v1.84.2
-  # - tailscale/tailscale:v1.86.0
+   - tailscale/tailscale:v1.86.5
   # - cloudreve/cloudreve:4.4.1
