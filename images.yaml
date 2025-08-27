@@ -24,4 +24,3 @@ images:
   # - fredliang/derper:v1.84.2
   # - tailscale/tailscale:v1.86.0
   # - cloudreve/cloudreve:4.4.1
-  - tailscale/tailscale:latest
