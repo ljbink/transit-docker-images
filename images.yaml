@@ -23,4 +23,4 @@ images:
   # - caddy:2.10.0
   # - fredliang/derper:v1.84.2
   # - tailscale/tailscale:v1.86.5
-  - cloudreve/cloudreve:4.9.0
+  - cloudreve/cloudreve:4.9.2
