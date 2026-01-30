@@ -10,7 +10,7 @@ images:
   # - caddy:2.10.0
   # - fredliang/derper:v1.84.2
   # - tailscale/tailscale:v1.86.5
-  - cloudreve/cloudreve:4.12.1
+  # - cloudreve/cloudreve:4.12.1
   # - n8nio/n8n:1.115.3
   # - mysql:8.4.5
   # - bitnamilegacy/redis:8.0
