@@ -6,17 +6,17 @@ images:
   # - corentinth/it-tools:2024.10.22-7ca5933
   # - rustdesk/rustdesk-server:1.1.14
   # - headscale/headscale:sha-474ea236
-  # - vaultwarden/server:latest
+  - vaultwarden/server:latest
   # - caddy:2.10.0
   # - fredliang/derper:v1.84.2
   # - tailscale/tailscale:v1.86.5
-  # - cloudreve/cloudreve:4.9.2
+  - cloudreve/cloudreve:4.12.1
   # - n8nio/n8n:1.115.3
-  - mysql:8.4.5
-  - bitnamilegacy/redis:8.0
-  - bitnamilegacy/elasticsearch:8.18.0
-  - bitnamilegacy/etcd:3.5
-  - milvusdb/milvus:v2.5.10
-  - nsqio/nsq:v1.2.1
-  - cozedev/coze-studio-server:0.5.0.beta
-  - cozedev/coze-studio-web:0.5.0.beta
+  # - mysql:8.4.5
+  # - bitnamilegacy/redis:8.0
+  # - bitnamilegacy/elasticsearch:8.18.0
+  # - bitnamilegacy/etcd:3.5
+  # - milvusdb/milvus:v2.5.10
+  # - nsqio/nsq:v1.2.1
+  # - cozedev/coze-studio-server:0.5.0.beta
+  # - cozedev/coze-studio-web:0.5.0.beta
